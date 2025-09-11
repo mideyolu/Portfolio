@@ -36,48 +36,56 @@ const ImageLightbox: FC<ImageLightboxProps> = ({ images, alt, className }) => {
                 }}
             />
 
-            {open && (
-                <div className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center p-4">
-                    <div className="relative w-full h-full flex justify-center items-center overflow-hidden">
-                        <AnimatePresence mode="wait">
-                            <motion.img
-                                key={currentIndex}
-                                src={images[currentIndex]}
-                                alt={alt}
-                                initial={{ opacity: 0, x: 50 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                exit={{ opacity: 0, x: -50 }}
-                                transition={{ duration: 0.4 }}
-                                className="max-w-[80vw] max-h-[90vh] object-contain rounded-lg shadow-lg absolute"
-                            />
-                        </AnimatePresence>
+            <AnimatePresence>
+                {open && (
+                    <motion.div
+                        className="fixed inset-0 z-50 bg-black bg-opacity-80 flex justify-center items-center p-4"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        <div className="relative w-full h-full flex justify-center items-center overflow-hidden">
+                            <AnimatePresence mode="wait">
+                                <motion.img
+                                    key={currentIndex}
+                                    src={images[currentIndex]}
+                                    alt={alt}
+                                    initial={{ opacity: 0, x: 50 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0, x: -50 }}
+                                    transition={{ duration: 0.4 }}
+                                    className="max-w-[80vw] max-h-[90vh] object-contain rounded-lg shadow-lg absolute"
+                                />
+                            </AnimatePresence>
 
-                        {/* Close button */}
-                        <Button
-                            className="cursor-pointer absolute top-5 right-5 z-20 rounded-full p-3 bg-[var(--button-bg-color)] hover:bg-[var(--button-hover-color)]"
-                            onClick={() => setOpen(false)}
-                        >
-                            ✕
-                        </Button>
+                            {/* Close button */}
+                            <Button
+                                className="cursor-pointer absolute top-5 right-5 z-20 rounded-full p-3 bg-[var(--button-bg-color)] hover:bg-[var(--button-hover-color)]"
+                                onClick={() => setOpen(false)}
+                            >
+                                ✕
+                            </Button>
 
-                        {/* Prev button */}
-                        <Button
-                            className="cursor-pointer absolute left-5 top-1/2 -translate-y-1/2 z-20 rounded-full p-3 bg-[var(--button-bg-color)] hover:bg-[var(--button-hover-color)]"
-                            onClick={prevImage}
-                        >
-                            ◀
-                        </Button>
+                            {/* Prev button */}
+                            <Button
+                                className="cursor-pointer absolute left-5 top-1/2 -translate-y-1/2 z-20 rounded-full p-3 bg-[var(--button-bg-color)] hover:bg-[var(--button-hover-color)]"
+                                onClick={prevImage}
+                            >
+                                ◀
+                            </Button>
 
-                        {/* Next button */}
-                        <Button
-                            className="cursor-pointer absolute right-5 top-1/2 -translate-y-1/2 z-20 rounded-full p-3 bg-[var(--button-bg-color)] hover:bg-[var(--button-hover-color)]"
-                            onClick={nextImage}
-                        >
-                            ▶
-                        </Button>
-                    </div>
-                </div>
-            )}
+                            {/* Next button */}
+                            <Button
+                                className="cursor-pointer absolute right-5 top-1/2 -translate-y-1/2 z-20 rounded-full p-3 bg-[var(--button-bg-color)] hover:bg-[var(--button-hover-color)]"
+                                onClick={nextImage}
+                            >
+                                ▶
+                            </Button>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </>
     );
 };
