@@ -6,7 +6,7 @@ import type { FC } from "react";
 
 const ProjectActions: FC<ProjectActionsProps> = ({
     inProgress,
-    liveUrl,
+    //liveUrl,
     githubUrl,
     onLiveClick,
 }) => (
