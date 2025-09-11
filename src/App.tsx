@@ -1,12 +1,12 @@
 import About from "@/components/About/About";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
-// import Skills from "@/components/Skill/Skills";
+import Skills from "@/components/Skill/Skills";
 import { useRef } from "react";
 import { Toaster } from "react-hot-toast";
-// import Contact from "./components/Contact/Contact";
+import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-// import Projects from "./components/Projects/Projects";
+import Projects from "./components/Projects/Projects";
 import "./index.css";
 
 const App = () => {
@@ -18,9 +18,9 @@ const App = () => {
             <Navbar contactRef={contactRef} />
             <Hero />
             <About />
-            {/* <Projects />
+            <Projects />
             <Skills />
-            <Contact ref={contactRef} /> */}
+            <Contact ref={contactRef} />
             <Footer />
         </div>
     );
