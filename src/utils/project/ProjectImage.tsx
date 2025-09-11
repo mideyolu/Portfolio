@@ -1,6 +1,6 @@
 // ProjectImage.tsx
 import type { ProjectImageProps } from "@/types/project";
-import ImageLightbox from "@/utils/projects/ImageLightbox";
+import ImageLightbox from "@/utils/project/ImageLightbox";
 import type { FC } from "react";
 
 const ProjectImage: FC<ProjectImageProps> = ({ images, isLoading }) => (
