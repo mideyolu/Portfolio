@@ -6,10 +6,10 @@ import type { FC } from "react";
 const Footer: FC = () => {
     return (
         <header className="py-10 md:py-10 w-full z-50 shadow-md shadow-[#1a1a1a] bg-[#0a0a0a]">
-            <footer className="container max-w-[1280px] mx-auto flex justify-center flex-col gap-5 space-y-4 md:flex-row md:justify-between items-center px-6 py-4">
+            <footer className="container max-w-[1280px] mx-auto flex justify-center flex-col gap-5 space-y-4 md:flex-row md:justify-between items-center px-6 py-2">
                 {/* Logo */}
                 <div className="flex flex-col items-center justify-center space-y-6 md:space-y-3 md:items-start gap-2">
-                    <img src="/logo.png" alt="Logo" className="w-20" />
+                    <img src="/logo.png" alt="Logo" className="w-15" />
                     <span className="block text-[var(--text-color)] font-semibold">
                         Is
                         <span className="text-[var(--color-accent)]">mail</span>
