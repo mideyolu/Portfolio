@@ -108,11 +108,23 @@ export const projects: Project[] = [
 
     {
         id: 6,
-        title: "Trekly",
+        title: "FinWise",
         description:
-            "A multi-agent travel itinerary planner that provides personalized recommendations for flights, hotel and generates dynamic travel plan activities.",
-        techStack: ["React", "TailwindCSS", "ShadCn", "FastAPI","PostgreSQL", "Agno"],
-        image: ["/assets/projects/no-image.jpg"],
+            "A multi-agent AI-powered financial analytics web app providing insights, trends, and report generation for personal finance and investment portfolios.",
+        techStack: [
+            "React",
+            "TypeScript",
+            "TailwindCSS",
+            "ShadCn",
+            "FastAPI",
+            "Agno",
+            "Firebase",
+        ],
+        image: [
+            "/assets/projects/fin_wise/fin_wise-1.jpg",
+            "/assets/projects/fin_wise/fin_wise-2.jpg",
+            "/assets/projects/fin_wise/fin_wise-3.jpg",
+        ],
         liveUrl: "#",
         githubUrl: "#",
         categories: ["Web", "AI"],
@@ -120,19 +132,11 @@ export const projects: Project[] = [
     },
 
     // {
-    //     id: 7,
-    //     title: "FinWise",
+    //     id: 6,
+    //     title: "Trekly",
     //     description:
-    //         "A multi-agent AI-powered financial analytics web app providing insights, trends, and report generation for personal finance and investment portfolios.",
-    //     techStack: [
-    //         "React",
-    //         "TypeScript",
-    //         "TailwindCSS",
-    //         "ShadCn",
-    //         "FastAPI",
-    //         "Agno",
-    //         "Firebase",
-    //     ],
+    //         "A multi-agent travel itinerary planner that provides personalized recommendations for flights, hotel and generates dynamic travel plan activities.",
+    //     techStack: ["React", "TailwindCSS", "ShadCn", "FastAPI","PostgreSQL", "Agno"],
     //     image: ["/assets/projects/no-image.jpg"],
     //     liveUrl: "#",
     //     githubUrl: "#",
