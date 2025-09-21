@@ -9,7 +9,7 @@ const Timeline: FC = () => {
             {aboutItems.map((item, index) => (
                 <div
                     key={index}
-                    className="mb-10 ml-6 flex items-start gap-6 text-justify"
+                    className="mb-10 ml-1 md:ml-6 flex items-start gap-6 text-justify"
                 >
                     <div className="absolute -left-[11px] flex items-center justify-center w-5 h-5 bg-[var(--color-accent)] rounded-full border-2 border-[var(--shadow-color)]" />
 
