@@ -28,6 +28,12 @@ export const slideFromUp = {
     transition: { duration: 0.6 },
 };
 
+export const slideFromDown = {
+    initial: { opacity: 0, y: 50 },
+    whileInView: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 },
+};
+
 // Scale & fade (for images)
 export const scaleFade: MotionProps = {
     initial: { scale: 0.8, opacity: 0 },
