@@ -1,14 +1,53 @@
+
+
+// export const aboutItems = [
+//     {
+//         title: "About Me",
+//         description: "I'm a Software Engineer specializing in AI, Machine Learning, and Data Science. I graduated with a First Class Honors in Software Engineering from Babcock University, with strong foundations in algorithms, databases, and software design.",
+
+//         tags: [
+//             "AI & ML",
+//             "Data Science",
+//             "EDA",
+//             "Data Analysis",
+//             "Visualization",
+//             "Web Development",
+//         ],
+//         animation: slideFromUp,
+//     },
+//     {
+//         title: "Experience & Volunteering",
+//         description:
+//             "I have over a year of experience in data analytics, AI-driven solutions, and frontend development. At the National Center for Artificial Intelligence and Robotics, I worked on an AI-powered attendance system and a smart IoT parking solutions. I interned at Bizmarrow Technologies, creating responsive web interfaces, and volunteered as Resource Manager at GDG Babcock (Data/AI), where I organized workshops and supported open-source initiatives.",
+
+
+//         tags: [
+//             "Internship",
+//             "Projects",
+//             "IoT Applications",
+//             "Community Engagement",
+//         ],
+//         animation: slideFromRight,
+//     },
+// ];
+
+
 // about.ts
+
+
+
 import {
     slideFromRight,
-    slideFromUp
+    slideFromUp,
+    slideFromLeft,
+    slideFromDown
 } from "@/components/Animation/animation";
 
 export const aboutItems = [
     {
-        title: "About Me",
-        description: "I'm a Software Engineer specializing in AI, Machine Learning, and Data Science. I graduated with a First Class Honors in Software Engineering from Babcock University, with strong foundations in algorithms, databases, and software design.",
-
+        title: "My Profile",
+        description:
+            "I'm a Software Engineer specializing in AI, Machine Learning, and Data Science. I graduated with a First Class Honors in Software Engineering from Babcock University, with strong foundations in algorithms, databases, and software design.",
         tags: [
             "AI & ML",
             "Data Science",
@@ -20,17 +59,39 @@ export const aboutItems = [
         animation: slideFromUp,
     },
     {
-        title: "Experience & Volunteering",
+        title: "NCAIR",
         description:
-            "I have over a year of experience in data analytics, AI-driven solutions, and frontend development. At the National Center for Artificial Intelligence and Robotics, I worked on an AI-powered attendance system and a smart IoT parking solutions. I interned at Bizmarrow Technologies, creating responsive web interfaces, and volunteered as Resource Manager at GDG Babcock (Data/AI), where I organized workshops and supported open-source initiatives.",
-
-
+            "At the National Center for Artificial Intelligence and Robotics, I worked on cutting-edge projects including an AI-powered attendance system and smart IoT parking solutions. This experience allowed me to apply my knowledge in artificial intelligence to solve real-world problems and develop innovative technological solutions.",
         tags: [
-            "Internship",
-            "Projects",
+            "AI Solutions",
             "IoT Applications",
-            "Community Engagement",
+            "Computer Vision",
+            "Project Development",
         ],
         animation: slideFromRight,
+    },
+    {
+        title: "Bizmarrow Technologies",
+        description:
+            "During my internship at Bizmarrow Technologies, I focused on frontend development, creating responsive and user-friendly web interfaces. This opportunity helped me strengthen my skills in modern web technologies and understand the commercial application of software development.",
+        tags: [
+            "Frontend Development",
+            "Responsive Design",
+            "Web Technologies",
+            "Internship",
+        ],
+        animation: slideFromLeft,
+    },
+    {
+        title: "Volunteering",
+        description:
+            "I served as Resource Manager at GDG Babcock (Data/AI), where I organized technical workshops, managed community resources, and supported open-source initiatives. This role allowed me to contribute to the developer community while developing leadership and organizational skills.",
+        tags: [
+            "Community Engagement",
+            "Workshop Organization",
+            "Open-Source",
+            "Leadership",
+        ],
+        animation: slideFromDown,
     },
 ];
