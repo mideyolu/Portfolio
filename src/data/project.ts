@@ -4,7 +4,7 @@ import type { Project } from "@/types/project";
 export const projects: Project[] = [
     {
         id: 1,
-        title: "Respirix For Lung Cancer Detection System",
+        title: "Respirix",
         description:
             "Full-stack AI system using FastAPI and React to detect lung cancer from CT scans with a TensorFlow Lite model.",
         techStack: [
