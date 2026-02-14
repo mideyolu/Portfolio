@@ -58,7 +58,7 @@ export const aboutItems = [
         ],
         animation: slideFromUp,
     },
-    {
+   /* {
         title: "NCAIR",
         description:
             "At the National Center for Artificial Intelligence and Robotics, I worked on cutting-edge projects including an AI-powered attendance system and smart IoT parking solutions. This experience allowed me to apply my knowledge in artificial intelligence to solve real-world problems and develop innovative technological solutions.",
@@ -69,7 +69,7 @@ export const aboutItems = [
             "Project Development",
         ],
         animation: slideFromRight,
-    },
+   },*/
     {
         title: "Bizmarrow Technologies",
         description:
@@ -78,6 +78,8 @@ export const aboutItems = [
             "Frontend Development",
             "Responsive Design",
             "Web Technologies",
+            "Computer Vision",
+            "Project Development",
             "Internship",
         ],
         animation: slideFromLeft,
