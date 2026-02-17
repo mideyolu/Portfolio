@@ -37,7 +37,7 @@
 
 
 import {
-    //slideFromRight,
+    slideFromRight,
     slideFromUp,
     slideFromLeft,
     slideFromDown
