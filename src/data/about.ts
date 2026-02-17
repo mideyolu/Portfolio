@@ -89,9 +89,7 @@ export const aboutItems = [
         tags: [
             "Community Engagement",
             "Workshop Organization",
-            "Open-Source",
-            "Computer Vision",
-            "Project Development",
+      
             "Internship",
             "Leadership",
         ],
