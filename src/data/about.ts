@@ -60,7 +60,7 @@ export const experiences: ExperienceItem[] = [
         organization: "Independent Practice",
         location: "Nigeria / Remote",
         summary:
-            "Building multi-agent platforms and full-stack products end to end — architecture, models, and interface.",
+            "Building Stifstream an ecommerce analytics platform that streams order events to monitor revenue and many more.",
         highlights: [
             "Building Trekly, an agentic itinerary engine coordinating flight, hotel, and budget tools.",
             "Shipped RespirixNet, a clinical web app running TensorFlow Lite inference under 120ms.",
