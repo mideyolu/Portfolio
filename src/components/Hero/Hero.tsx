@@ -7,7 +7,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const LINES = ["Software engineer,", "building AI systems", "that do real work."];
+const LINES = ["HI I'm,", "Oluwuyi Olumide"];
 
 const STATS = [
     {
@@ -111,20 +111,22 @@ export function Hero() {
                     </span>
                 </motion.div>
 
-                <div className="grid items-end gap-10 pt-10 sm:pt-14 lg:grid-cols-[1.12fr_0.88fr] lg:gap-16">
+                <div className="grid items-center gap-10 pt-10 sm:pt-14 lg:grid-cols-[1.12fr_0.88fr] lg:gap-16">
                     {/* Headline */}
                     <div>
-                        <h1 className="display-xl text-ink">
+                        <h1 className="text-ink">
                             {LINES.map((line, i) => (
                                 <span
                                     key={line}
                                     className="block overflow-hidden pb-[0.06em] -mb-[0.06em]"
                                 >
                                     <motion.span
-                                        className="block"
-                                        initial={
-                                            reduce ? false : { y: "108%" }
-                                        }
+                                        className={`block ${
+                                            i === 0
+                                                ? "text-3xl sm:text-4xl font-normal text-neutral-900 dark:text-neutral-400"
+                                                : "text-6xl sm:text-7xl lg:text-8xl font-bold tracking-tight text-neutral-900 dark:text-white"
+                                        }`}
+                                        initial={reduce ? false : { y: "108%" }}
                                         animate={{ y: 0 }}
                                         transition={lineTransition(i)}
                                     >
@@ -133,13 +135,13 @@ export function Hero() {
                                 </span>
                             ))}
                         </h1>
-
+{/*
                         <motion.p className="lede mt-7 sm:mt-9" {...rise(0.5)}>
                             Clinical imaging at the edge, multi-agent planning
                             engines, and the interfaces that make them legible.
                             First Class Software Engineering graduate shipping
                             full-stack products end to end.
-                        </motion.p>
+                        </motion.p> */}
 
                         <motion.div
                             className="mt-8 flex flex-wrap items-center gap-x-7 gap-y-4"
@@ -168,13 +170,16 @@ export function Hero() {
                         >
                             {socialLinks.map((link) => {
                                 const Icon = link.icon;
-                                const external = !link.href.startsWith("mailto:");
+                                const external =
+                                    !link.href.startsWith("mailto:");
                                 return (
                                     <a
                                         key={link.label}
                                         href={link.href}
                                         target={external ? "_blank" : undefined}
-                                        rel={external ? "noreferrer" : undefined}
+                                        rel={
+                                            external ? "noreferrer" : undefined
+                                        }
                                         className="group inline-flex items-center gap-1.5 text-[0.85rem] text-ink2 transition-colors hover:text-ink"
                                     >
                                         <Icon className="size-3.5" />
@@ -207,7 +212,7 @@ export function Hero() {
                         </div>
                         <figcaption className="mt-3 border-t border-rule pt-3">
                             <span className="text-[0.85rem] text-ink">
-                                Olumide Oluwuyi
+                                Software Engineer
                             </span>
                         </figcaption>
                     </motion.figure>
